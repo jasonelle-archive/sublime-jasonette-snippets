@@ -1,0 +1,248 @@
+{
+  "completions":[
+    {
+      "trigger":"this\tThis keyword",
+      "contents":"\"{{this}}\""
+    },
+    {
+      "trigger":"$audio.record\tRecords audio",
+      "contents":"{\n    \"type\": \"$audio.record\",\n    \"options\": {\n        \"color\": \"rgb(0,0,0)\",\n        \"color:disabled\": \"rgb(0,0,0)\",\n        \"theme\": \"light\",\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$cache.get\tDirectly access $cache variable from a template expression",
+      "contents":"\"{{$cache.VARIABLE_NAME}}\""
+    },
+    {
+      "trigger":"$audio.play\tPlay audio from remote url",
+      "contents":"{\n    \"type\": \"$audio.play\",\n    \"options\": {\n        \"url\": \"http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/songexploder/SongExploder73-Busdriver.mp3\",\n        \"title\": \"Busdriver - Worlds to Run\",\n        \"author\": \"Song Exploder\",\n        \"image\": \"http://discover.pocketcasts.com/discover/images/400/fff9ba50-53e1-0131-8293-723c91aeae46.jpg\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$snapshot\tTakes a snapshot of the currently visible screen",
+      "contents":"{\n    \"type\": \"$snapshot\",\n    \"success\": {\n\n    },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$util.toast\tDisplays a toast notification with a simple text",
+      "contents":"{\n    \"type\": \"$util.toast\",\n    \"options\": {\n        \"text\": \"I'm a toast. I display a simple text.\",\n        \"type\": \"error\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$media.picker\tOpens the device camera roll",
+      "contents":"{\n    \"type\": \"$media.picker\",\n    \"options\": {\n        \"type\": \"photo\",\n        \"edit\": \"true\",\n        \"quality\": \"high\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$require\tThe $require action imports remote JSON files in parallel",
+      "contents":"{\n    \"type\": \"$require\",\n    \"options\": {\n\n    },\n    \"success\": { },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"textfield\tSingle line input field",
+      "contents":"{\n    \"type\": \"textfield\",\n    \"name\": \"LocalVariableName\",\n    \"placeholder\": \"Placeholder Text\",\n    \"keyboard\": \"text\",\n    \"style\": {\n        \"background\": \"rgb(0,0,0)\",\n        \"align\": \"left\",\n        \"autocorrect\": \"true\",\n        \"autocapitalize\": \"true\",\n        \"spellcheck\": \"true\",\n        \"size\": \"30\",\n        \"font\": \"AcademyEngravedLetPlain\",\n        \"color\": \"rgb(0,0,0)\",\n        \"placeholder_color\": \"rgb(0,0,0)\",\n        \"secure\": \"true\"\n    }\n}"
+    },
+    {
+      "trigger":"$reload\tRefreshes the view completely by re-fetching content from the current URL",
+      "contents":"{\n    \"type\": \"$reload\",\n    \"success\": { },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$global.get\tRead global variables using template expressions",
+      "contents":"\"{{$global.VARIABLE_NAME}}\""
+    },
+    {
+      "trigger":"$cache.reset\tUse $cache.reset action to reset the cache associated with the current url",
+      "contents":"{\n    \"type\": \"$cache.reset\",\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$util.picker\tOpens a multiple choice picker menu, with each item linking to an action or an href",
+      "contents":"{\n    \"type\": \"$util.picker\",\n    \"options\": {\n        \"title\": \"Choose an item\",\n        \"items\": [{\n            \"text\": \"Choice\",\n            \"href\": \"MY_LAMBDA\",\n            \"action\": {  }\n        }]\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$global.reset\tUse $global.reset action to remove global variables by name",
+      "contents":"{\n    \"type\": \"$global.reset\",\n    \"items\": [\"Key\"],\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$network.upload\tUpload data to cloud providers. Currently supports S3",
+      "contents":"{\n    \"type\": \"$network.upload\",\n    \"options\": {\n        \"type\": \"s3\",\n        \"bucket\": \"s3://...\",\n        \"path\": \"path/to/file\",\n        \"sign_url\": \"sign_url\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$timer.start\tStart a timer using seconds as a countdown",
+      "contents":"{\n    \"type\": \"$timer.start\",\n    \"options\": {\n        \"interval\": \"1\",\n        \"name\": \"timer1\",\n        \"repeats\": \"true\",\n        \"action\": {  }\n    },\n    \"success\": { },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"space\tAn empty space component mostly used for layout purposes",
+      "contents":"{\n    \"type\": \"space\",\n    \"style\": {\n        \"background\": \"rgb(0,0,0)\",\n        \"width\": \"30\",\n        \"height\": \"10\"\n    }\n}"
+    },
+    {
+      "trigger":"$timer.stop\tStops a timer using the name of the timer",
+      "contents":"{\n    \"type\": \"$timer.stop\",\n    \"options\": {\n        \"name\": \"timer1\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$util.share\tShare a text, image, video, or a combination of them",
+      "contents":"{\n    \"type\": \"$util.share\",\n    \"options\": {\n        \"items\": [{\n            \"type\": \"text\",\n            \"text\": \"I'm a toast. I display a simple text.\",\n            \"data\": \"\",\n            \"url\": \"www.myurl.com/image.jpg\",\n            \"file_url\": \"www.myurl.com/video.mp4\"\n        }]\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$get\tUse $set and $get to set and get local variables.",
+      "contents":"\"{{$get.VARIABLE_NAME}}\""
+    },
+    {
+      "trigger":"$audio.stop\tStops an audio clip that's already playing from a remote url. If URL is specified, stops ONLY this url. Otherwise, stops all audios currently playing",
+      "contents":"{\n    \"type\": \"$audio.stop\",\n    \"options\": {\n        \"url\": \"http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/songexploder/SongExploder73-Busdriver.mp3\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$geo.get\tGet user's geolocation using accuracy in meters",
+      "contents":"{\n    \"type\": \"$geo.get\",\n    \"options\": {\n        \"distance\": \"5000\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$util.alert\tDisplays an alert",
+      "contents":"{\n    \"type\": \"$util.toast\",\n    \"options\": {\n        \"title\": \"Hello\",\n        \"description\": \"This is a message\",\n        \"form\": [  ]\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"slider\tHorizontal slider input",
+      "contents":"{\n    \"type\": \"slider\",\n    \"name\": \"LocalVariableName\",\n    \"value\": \"0.3\",\n    \"action\": { },\n    \"style\": {\n        \"width\": \"30\",\n        \"height\": \"10\",\n        \"color\": \"rgb(0,0,0)\"\n    }\n}"
+    },
+    {
+      "trigger":"$util.addressbook\tFetches the addressbook to populate them into $jason",
+      "contents":"{\n    \"type\": \"$util.addressbook\",\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$cache.set\t$cache.set action is used to store to cache",
+      "contents":"{\n    \"type\": \"$cache.set\",\n    \"options\": {\n        \"items\": \"$jason\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$lambda\tCall another action by name",
+      "contents":"{\n    \"type\": \"$lambda\",\n    \"options\": {\n        \"name\": \"function_name\",\n        \"options\": {\n\n        }\n    },\n    \"success\": { },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"mixin\tMixin Helper",
+      "contents":"\"@\": \"https://custom.templates/item.json\""
+    },
+    {
+      "trigger":"$audio.pause\tPauses an audio clip that's already playing from a remote url",
+      "contents":"{\n    \"type\": \"$audio.pause\",\n    \"options\": {\n        \"url\": \"http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/songexploder/SongExploder73-Busdriver.mp3\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"image\tImage loaded from either remote url or data-url",
+      "contents":"{\n    \"type\": \"image\",\n    \"url\": \"http://i.imgur.com/KUJPgGV.png\",\n    \"header\": { },\n    \"style\": {\n        \"width\": \"30\",\n        \"height\": \"10\",\n        \"color\": \"rgb(0,0,0)\",\n        \"corner_radius\": \"0\"\n    }\n}"
+    },
+    {
+      "trigger":"nestedlayout\tA layout to store components in",
+      "contents":"{\n    \"type\": \"vertical\",\n    \"style\": {\n        \"padding\": \"10\",\n        \"spacing\": \"10\",\n        \"background\": \"rgb(0,0,0)\",\n        \"z_index\": \"0\",\n        \"opacity\": \"1\",\n        \"align\": \"left\",\n        \"distribution\": \"fill\"\n    },\n    \"components\": [{\n        \"type\": \"vertical\",\n        \"style\": {\n            \"padding\": \"10\",\n            \"spacing\": \"10\",\n            \"background\": \"rgb(0,0,0)\",\n            \"z_index\": \"0\",\n            \"opacity\": \"1\",\n            \"align\": \"left\",\n            \"distribution\": \"fill\"\n        },\n        \"components\": [\n\n        ]\n    }]\n}"
+    },
+    {
+      "trigger":"$audio.duration\tReturns total duration of the specified audio clip in seconds",
+      "contents":"{\n    \"type\": \"$audio.duration\",\n    \"options\": {\n        \"url\": \"http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/songexploder/SongExploder73-Busdriver.mp3\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$util.banner\tDisplays a banner notification with title and description",
+      "contents":"{\n    \"type\": \"$util.banner\",\n    \"options\": {\n        \"title\": \"Hello\",\n        \"description\": \"This is a message\",\n        \"type\": \"error\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$session.set\t$session.set takes care of token authentication to authenticate into any mobile API",
+      "contents":"{\n    \"type\": \"$session.set\",\n    \"options\": {\n        \"domain\": \"jasonbase.com\",\n        \"header\": { },\n        \"body\": { }\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"if\tSingle conditional statement",
+      "contents":"[{\n    \"{{#if expression}}\": \"Yes\"\n}]"
+    },
+    {
+      "trigger":"each\tIterates through the expression that comes after declaration",
+      "contents":"\"{{#each collection}}\": {\n    \"type\": \"component\"\n}"
+    },
+    {
+      "trigger":"$audio.position\tGet the position of the specified audio clip",
+      "contents":"{\n    \"type\": \"$audio.position\",\n    \"options\": {\n        \"url\": \"http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/songexploder/SongExploder73-Busdriver.mp3\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"elseif\tConditional statement including else",
+      "contents":"[{\n    \"{{#if expression}}\": \"Yes\"\n},{\n    \"{{#elseif expression}}\": \"Maybe\"\n},{\n    \"{{#else expression}}\": \"No\"\n}]"
+    },
+    {
+      "trigger":"$global.set\t$global.set action is used to write to global variables",
+      "contents":"{\n    \"type\": \"$global.set\",\n    \"options\": {\n        \"items\": \"$jason\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"href\tUsed to describe links between views",
+      "contents":"\"href\": {\n    \"url\": \"www.mylinkurl.com/myfile.json\",\n    \"view\": \"jason\",\n    \"transition\": \"push\",\n    \"loading\": \"true\"\n}"
+    },
+    {
+      "trigger":"$convert.rss\tConvert RSS to JSON. Built on top of node-feedparser library",
+      "contents":"{\n    \"type\": \"$convert.rss\",\n    \"options\": {\n        \"data\": \"\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$href\tAn action version of href. Works the same way, but can be used when a component doesn't support href attribute directly",
+      "contents":"{\n    \"type\": \"$href\",\n    \"options\": {\n        \"url\": \"www.mylinkurl.com/myfile.json\",\n        \"view\": \"jason\",\n        \"transition\": \"push\",\n        \"options\": {\n\n        }\n    },\n    \"success\": { },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"map\tMap component",
+      "contents":"{\n    \"type\": \"map\",\n    \"region\": {\n        \"coord\": \"0,0\",\n        \"width\": \"30\",\n        \"height\": \"10\"\n    },\n    \"pins\": {\n        \"title\": \"This is a pin\",\n        \"description\": \"It really is.\",\n        \"coord\": \"0,0\",\n        \"style\": {\n            \"selected\": \"true,\"\n        }\n    },\n    \"style\": {\n        \"type\": \"sattelite\",\n        \"width\": \"30\",\n        \"height\": \"10\",\n        \"corner_radius\": \"0\"\n    }\n}"
+    },
+    {
+      "trigger":"$convert.csv\tConverts CSV to parsed JSON",
+      "contents":"{\n    \"type\": \"$convert.csv\",\n    \"options\": {\n        \"data\": \"\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"ifelse\tConditional statement including else",
+      "contents":"[{\n    \"{{#if expression}}\": \"Yes\"\n},{\n    \"{{#else expression}}\": \"No\"\n}]"
+    },
+    {
+      "trigger":"$audio.seek\tSeeks audio already playing from a remote url",
+      "contents":"{\n    \"type\": \"$audio.seek\",\n    \"options\": {\n        \"url\": \"http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/songexploder/SongExploder73-Busdriver.mp3\",\n        \"position\": \"0.35\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$util.datepicker\tOpens a datepicker and returns the value in unix time format",
+      "contents":"{\n    \"type\": \"$util.picker\",\n    \"options\": {\n        \"title\": \"Choose an item\",\n        \"items\": [{\n            \"text\": \"Choice\",\n            \"href\": \"MY_LAMBDA\",\n            \"action\": {  }\n        }]\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"label\tStatic uneditable text element",
+      "contents":"{\n    \"type\": \"label\",\n    \"text\": \"Hello world\",\n    \"style\": {\n        \"font\": \"AcademyEngravedLetPlain\",\n        \"size\": \"30\",\n        \"color\": \"rgb(0,0,0)\",\n        \"padding\": \"10\",\n        \"background\": \"rgb(0,0,0)\",\n        \"corner_radius\": \"0\"\n    }\n}"
+    },
+    {
+      "trigger":"$media.camera\tCapture a video or a photo using the device camera",
+      "contents":"{\n    \"type\": \"$media.camera\",\n    \"options\": {\n        \"type\": \"photo\",\n        \"edit\": \"true\",\n        \"quality\": \"high\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"button\tA basic component that responds to user tap",
+      "contents":"{\n    \"type\": \"button\",\n    \"text\": \"Click Me\",\n    \"url\": \"http://i.imgur.com/KUJPgGV.png\",\n    \"header\": { },\n    \"style\": {\n        \"width\": \"30\",\n        \"height\": \"10\",\n        \"color\": \"rgb(0,0,0)\",\n        \"background\": \"rgb(0,0,0)\",\n        \"corner_radius\": \"0\",\n        \"padding\": \"10\",\n        \"align\": \"left\"\n    },\n    \"action\": { }\n}"
+    },
+    {
+      "trigger":"$close\tClose a modal (works when the currently view is a modal)",
+      "contents":"{\n    \"type\": \"$close\",\n    \"success\": { },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"layout\tA layout to store components in",
+      "contents":"{\n    \"type\": \"vertical\",\n    \"style\": {\n        \"padding\": \"10\",\n        \"spacing\": \"10\",\n        \"background\": \"rgb(0,0,0)\",\n        \"z_index\": \"0\",\n        \"opacity\": \"1\",\n        \"align\": \"left\",\n        \"distribution\": \"fill\"\n    },\n    \"components\": [\n\n    ]\n}"
+    },
+    {
+      "trigger":"$render\tRenders a template with data",
+      "contents":"{\n    \"type\": \"$render\",\n    \"success\": { },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$back\tTransition one step back from the current view. If the current view is a modal, it closes the current view, otherwise it slides back to the previous view",
+      "contents":"{\n    \"type\": \"$back\",\n    \"success\": { },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"textarea\tMultiline input field",
+      "contents":"{\n    \"type\": \"textarea\",\n    \"name\": \"LocalVariableName\",\n    \"value\": \"Prefilled Value\",\n    \"placeholder\": \"Placeholder Text\",\n    \"keyboard\": \"text\",\n    \"style\": {\n        \"background\": \"rgb(0,0,0)\",\n        \"align\": \"left\",\n        \"autocorrect\": \"true\",\n        \"autocapitalize\": \"true\",\n        \"spellcheck\": \"true\",\n        \"size\": \"30\",\n        \"font\": \"AcademyEngravedLetPlain\",\n        \"color\": \"rgb(0,0,0)\",\n        \"placeholder_color\": \"rgb(0,0,0)\"\n    }\n}"
+    },
+    {
+      "trigger":"html\tA self-contained web environment that you can plug in, style, and manipulate just like the rest of the components",
+      "contents":"{\n    \"type\": \"html\",\n    \"style\": { },\n    \"text\": \"<html><head><style>h1{font-size: 30px; color: #000;</style></head><body><h1>Hello World</h1></body></html>\"\n}"
+    },
+    {
+      "trigger":"$session.reset\tThis action lets you clear sessions for a specified domain. Can be used for both token authentication and web authentication via cookies",
+      "contents":"{\n    \"type\": \"$session.reset\",\n    \"options\": {\n        \"url\": \"www.url.com/fromwhich/to/signout\",\n        \"domain\": \"jasonbase.com\",\n        \"data\": { },\n    \"type\": \"json\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$set\tUse $set and $get to set and get local variables.",
+      "contents":"{\n    \"type\": \"$set\",\n    \"options\": { },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"jason\tA new jasonette app base",
+      "contents":"{\n    \"$jason\": {\n        \"head\": {\n            \"title\": \"My New App\",\n            \"description\": \"A jasonette app\",\n            \"offline\": \"true\",\n            \"styles\": { },\n            \"actions\": { },\n            \"templates\": { },\n            \"data\": { }\n        },\n        \"body\": {\n            \"header\": { },\n            \"sections\": [ ],\n            \"layers\": [ ],\n            \"footer\": { }\n        }\n    }\n}"
+    },
+    {
+      "trigger":"$media.play\tplays a video from remote url",
+      "contents":"{\n    \"type\": \"$media.play\",\n    \"options\": {\n        \"url\": \"https://vjs.zencdn.net/v/oceans.mp4\",\n        \"muted\": \"true\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    },
+    {
+      "trigger":"$network.request\tMake GET/POST/PUT/DELETE Action requests",
+      "contents":"{\n    \"type\": \"$network.request\",\n    \"options\": {\n        \"url\": \"www.mylinkurl.com/myfile.json\",\n        \"method\": \"get\",\n        \"data\": { },\n        \"header\": { },\n        \"data_type\": \"json\",\n        \"content_type\": \"\"\n    },\n    \"success\": {  },\n    \"error\": { }\n}"
+    }
+  ]
+}
