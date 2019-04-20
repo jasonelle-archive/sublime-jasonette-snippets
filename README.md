@@ -1,4 +1,4 @@
-# [Jasonette Completions](https://github.com/BarryMode/jasonette-completions)
+# Jasonette Completions
 
 The Jasonette completions in this repo were ported to Sublime Text from [Jasonette snippets](https://github.com/felipemullen/jasonette-snippets) made for Visual Studio Code.
 
