@@ -6,7 +6,7 @@ The Jasonette completions in this repo were ported to Sublime Text from [Jasonet
 
 | Prefix | Jasonette Snippet Content |
 | ------ | ------------ |
-| `jason` | `A new jasonette app base` |
+| `$jason` | `A new jasonette app base` |
 | `href` | `Used to describe links between views` |
 | `$require` | `The $require action imports remote JSON files in parallel` |
 | `$lambda` | `Call another action by name` |
